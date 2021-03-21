@@ -1,0 +1,19 @@
+.ride-form{
+    margin-top: 2%;
+    padding:0% 5%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+    background-color: rgba(211, 211, 211, 0.37);
+}
+.ride-form input{
+    display: block;
+    margin-bottom: 10%;
+    padding:2% 1%;
+    border:1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+.error{
+    color: red;
+}
