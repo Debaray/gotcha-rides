@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className="row d-flex mt-5 align-items-center">
             {
-                rideArray.map(ride =><Ride ride={ride}></Ride>)
+                rideArray.map(ride =><Ride key={ride.rideId} ride={ride}></Ride>)
             }
         </div>
     );

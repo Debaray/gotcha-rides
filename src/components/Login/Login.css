@@ -1,0 +1,31 @@
+.login-form{
+    margin: auto;
+    margin-top: 5%;
+    width:50%;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color:rgba(211, 211, 211, 0.507);
+}
+.login-form input,button{
+    display: block;
+    margin: auto;
+    margin-bottom: 1%;
+    padding:2% 1%;
+    border:1px solid gray;
+    border-radius: 5px;
+    width: 80%;
+}
+.login-form p{
+    margin: auto;
+    margin-bottom: 1%;
+    padding:2% 1%;
+    width: 80%;
+}
+.btn-style{
+    background-color: orangered;
+}
+.create-user{
+    text-decoration: underline;
+    color:blue;
+    cursor: pointer;
+}

@@ -30,9 +30,9 @@ function App() {
           <Route path="/contact">
             <Contact></Contact>
           </Route>
-          <Route path="/destination">
+          <PrivateRoute path="/destination">
               <Destination></Destination>
-          </Route>
+          </PrivateRoute>
           <PrivateRoute path="/ride/:rideName">
             <RideDetails></RideDetails>
           </PrivateRoute>

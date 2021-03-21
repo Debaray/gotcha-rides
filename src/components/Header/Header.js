@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from "../../App";
-import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
 import './Header.css';
 
 const Header = () => {
@@ -20,7 +19,11 @@ const Header = () => {
                             <Link className="nav-link" to="/destination">Destination</Link>
                             <Link className="nav-link" to="/blog">Blog</Link>
                             <Link className="nav-link" to="/contact">Contact</Link>
-                            <Link className="nav-link" to="/login"><button className="btn btn-primary">Log In</button></Link>
+                            {
+                                loggedInUser.email? `${loggedInUser.displayName}`:
+                                <Link className="nav-link" to="/login"><button className="btn btn-default">LogIn</button></Link>
+                            }
+                            
                             <button className="btn btn-default nav-link" onClick={() => setLoggedInUser({})}>Sign out</button>
                         </div>
 
