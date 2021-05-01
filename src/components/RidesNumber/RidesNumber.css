@@ -1,0 +1,17 @@
+.ride-detail{
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.185);
+    margin: auto;
+    padding: 5% 0;
+}
+.icon-with-name{
+    
+    text-align: center;
+}
+.icon-with-name p{
+    margin-left: 10%;
+}
+.fare-style{
+    text-align: left;
+}

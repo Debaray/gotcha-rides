@@ -16,7 +16,8 @@ const Login = () => {
     password: '',
     photo: ''
   });
-
+  let isFieldValid = true;
+  let fieldName="";
   initializeLoginFramework();
 
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -69,7 +70,8 @@ const Login = () => {
     e.preventDefault();
   }
   const handleBlur = (e) => {
-    let isFieldValid = true;
+    isFieldValid =true;
+    fieldName="";
     let passwordText ="";
     console.log(e.target.name, e.target.value);
     if (e.target.name === 'email') {
@@ -95,6 +97,9 @@ const Login = () => {
       newUserInfo[e.target.name] = e.target.value;
       setUser(newUserInfo);
     }
+   
+    fieldName = e.target.name;
+    
   }
 
   return (
@@ -109,6 +114,9 @@ const Login = () => {
           <br />
           <input type="submit" value={'Sign In'} />
           <p>Don't have an Account?<span className="create-user" onClick={() => setNewUser(!newUser)}>Create a new account</span></p>
+          { isFieldValid?
+            <p>{fieldName}</p> : <p style={{ color:'red'}}>{fieldName}</p>
+          }
         </form>}
         {newUser &&
           <form onSubmit={handleSubmit}>

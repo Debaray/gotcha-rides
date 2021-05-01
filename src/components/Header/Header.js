@@ -16,7 +16,7 @@ const Header = () => {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <div className="navbar-nav d-flex justify-content-center align-items-center">
                             <Link className="nav-link" to="/home">Home</Link>
-                            <Link className="nav-link" to="/destination">Destination</Link>
+                            <Link className="nav-link" to="/ride/bike">Destination</Link>
                             <Link className="nav-link" to="/blog">Blog</Link>
                             <Link className="nav-link" to="/contact">Contact</Link>
                             {
